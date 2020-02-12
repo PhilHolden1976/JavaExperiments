@@ -1,7 +1,7 @@
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
-class Main 
+class ByteTest 
 {
 
   public static void main(String[] args) 
@@ -18,7 +18,9 @@ class Main
 
   private static void runTest(boolean newMethod)
   {
-      for (int i = 0; i <= 255; i += 25)
+      int[] integers = { 0, 1, 2, 50, 100, 150, 200, 253, 254, 255 };
+
+      for (int i : integers)
       {
           if (i == 250) 
           {
